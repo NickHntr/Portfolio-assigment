@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nick Hntr is a web developer building modern portfolio projects with HTML, CSS, JavaScript, and C#.">
+    <meta name="author" content="Nick Hntr">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Nick Hntr, portfolio, web developer, frontend developer, HTML, CSS, JavaScript, C#">
+    <meta property="og:title" content="Nick Hntr | Web Developer Portfolio">
+    <meta property="og:description" content="Portfolio website for Nick Hntr, showcasing projects, skills, and contact information.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/hntr.png">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="icon" href="/images/hntr.png" type="image/x-icon">
+    <title>Nick Hntr | Web Developer Portfolio</title>
+</head>
+
+<body>
+   
+        <nav class="navWrap" aria-label="Main navigation">
+            <div class="navBar">
+                <div class="logo">
+                    <a aria-label="Go to homepage" href="#top">
+                        <img id="logoPic" src="/images/navLogocrop.png" alt="Nick Hntr logo" width="300" height="100">
+                    </a>
+                </div>
+                <div class="menuButtons">
+                    <a href="#about" aria-label="Open about section">About</a>
+                    <a href="#projects" aria-label="Open projects section">Projects</a>
+                    <a href="#skills" aria-label="Open skills section">Skills</a>
+                    <a href="#contact" aria-label="Open contact section">Contact</a>
+                </div>
+            </div>
+        </nav>
+    
+
+    <main id="top">
+
+
+        <section id="about" class="about-meWrap" aria-labelledby="about-me-heading">
+            <article class="about-meContainer">
+                <h1 id="about-me-heading">Hello, I am Nick, aspiring web developer.</h1>
+                <p>And this is my first portfolio website.</p>
+            </article>
+        </section>
+
+
+
+        <section id="projects" class="projectsWrap" aria-label="Project section">
+            <h2>My Projects</h2>
+
+            <section class="blockSlider" aria-label="Projects slideshow"> 
+                <div class="FullArea" id="test">
+                    <div class="imageArea">
+                    <img src="/images/slide1.jpg" class="imageSlider" alt="picture of lego man">
+                    <img src="/images/slide2.jpg" class="imageSlider" alt="pile of underconstruction signs">
+                    <img src="/images/slide3.jpg"class="imageSlider" alt="coming soon sign">
+                    </div>
+
+                    <div class="pointsAreaSize">
+                        <span class="point"></span>
+                        <span class="point"></span>
+                        <span class="point"></span>
+                    </div>
+
+                    <nav class="buttons">
+                        <div class="blockArrow" id="leftButton"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                        <div class="blockArrow" id="rightButton"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    </nav>
+                </div>
+            </section>
+
+
+        </section>
+
+    
+        <section id="skills" class="skills" aria-label="Skills list">
+            <div class="skillsBackground">
+            <h2>Skills</h2>
+            <ul class="skillList">
+                <li class="skill">C# - beginner</li>
+                <li class="skill">HTML - beginner</li>
+                <li class="skill">CSS - beginner</li>
+                <li class="skill">JavaScript - beginner</li>
+            </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-label="Contact section">
+
+            <h2>Contact me...</h2>
+
+            <form class="form" action="" method="post" aria-label="Contact form" novalidate>
+
+                <label for="yourname">Name</label>
+                <input type="text" id="yourname" name="name" placeholder="Enter your name" aria-label="Your name" aria-invalid="false">
+                <p id="nameError" class="formError" aria-live="polite"></p>
+
+                <label for="yourmessage">Your message</label>
+                <textarea id="yourmessage" name="message" rows="4" cols="50" 
+                aria-label="Your message" placeholder="Write your message here..." aria-invalid="false"></textarea>
+                <p id="messageError" class="formError" aria-live="polite"></p>
+
+                <div class="contactButtons">
+                <button type="reset" aria-label="Clear form">Clear</button>
+                <button type="submit" aria-label="Submit contact form">Submit</button>
+                </div>
+
+            </form>
+        </section>
+
+       
+    </main>
+    <footer>
+        <ul class="socials" aria-label="Social media links">
+            <li><a href="mailto:you@example.com">Mail</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Telegram</a></li>
+        </ul>
+    </footer>
+    <script src="test.js"></script>
+</body>
+
+</html>
